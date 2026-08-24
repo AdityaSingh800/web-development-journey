@@ -3,74 +3,83 @@
 ========================= */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 /* =========================
-   PAGE
+   BODY
 ========================= */
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     min-height: 100vh;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
-    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
 }
 
 
 /* =========================
-   INTRODUCTION BOX
+   COMING SOON CARD
 ========================= */
 
-.intro {
-    width: 90%;
-    max-width: 700px;
+.coming-card {
 
-    padding: 50px;
+    width: 90%;
+
+    max-width: 450px;
+
+    padding: 50px 30px;
 
     text-align: center;
+
+    background-color: white;
 
     border: 2px solid black;
 
     border-radius: 15px;
+
+    animation: cardAppear 1s ease-out;
+
 }
 
 
 /* =========================
-   MAIN HEADING
+   ROCKET
 ========================= */
 
-.intro h1 {
+.rocket {
+
     font-size: 4rem;
 
-    font-weight: 700;
+    margin-bottom: 20px;
 
-    letter-spacing: 4px;
+    animation: float 2s ease-in-out infinite;
 
-    margin-bottom: 10px;
 }
 
 
 /* =========================
-   SUBHEADING
+   HEADING
 ========================= */
 
-.intro h2 {
-    font-size: 1.5rem;
+.coming-card h1 {
 
-    font-weight: 600;
+    font-size: 2.5rem;
 
-    text-transform: uppercase;
+    margin-bottom: 15px;
 
-    margin-bottom: 20px;
 }
 
 
@@ -78,54 +87,148 @@ body {
    PARAGRAPH
 ========================= */
 
-.intro p {
+.coming-card p {
+
     font-size: 1rem;
 
     line-height: 1.6;
 
     margin-bottom: 30px;
+
 }
 
 
 /* =========================
-   BUTTON
+   LOADING
 ========================= */
 
-.button {
-    display: inline-block;
+.loading {
 
-    padding: 12px 20px;
+    display: flex;
 
-    text-decoration: none;
+    justify-content: center;
 
-    color: black;
+    gap: 8px;
 
-    border: 2px solid black;
-
-    border-radius: 8px;
 }
 
 
 /* =========================
-   MOBILE
+   DOT
 ========================= */
 
-@media (max-width: 480px) {
+.dot {
 
-    .intro {
-        padding: 30px 20px;
+    width: 10px;
+
+    height: 10px;
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    animation: loading 1s ease-in-out infinite;
+
+}
+
+
+/* =========================
+   DIFFERENT DELAYS
+========================= */
+
+.dot:nth-child(1) {
+
+    animation-delay: 0s;
+
+}
+
+.dot:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+.dot:nth-child(3) {
+
+    animation-delay: 0.4s;
+
+}
+
+
+/* =========================
+   CARD ANIMATION
+========================= */
+
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
     }
 
-    .intro h1 {
-        font-size: 2rem;
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
     }
 
-    .intro h2 {
-        font-size: 1.2rem;
+}
+
+
+/* =========================
+   ROCKET ANIMATION
+========================= */
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
     }
 
-    .intro p {
-        font-size: 0.95rem;
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   LOADING ANIMATION
+========================= */
+
+@keyframes loading {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
     }
 
 }
