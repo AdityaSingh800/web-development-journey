@@ -1,0 +1,131 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   INTRODUCTION BOX
+========================= */
+
+.intro {
+    width: 90%;
+    max-width: 700px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border: 2px solid black;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.intro h1 {
+    font-size: 4rem;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SUBHEADING
+========================= */
+
+.intro h2 {
+    font-size: 1.5rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.intro p {
+    font-size: 1rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    color: black;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .intro {
+        padding: 30px 20px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        font-size: 0.95rem;
+    }
+
+}

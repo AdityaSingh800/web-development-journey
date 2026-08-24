@@ -1,0 +1,180 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:arial, sans-serif;
+}
+
+/* =========================
+   STICKY NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-bottom: 20px solid black;
+}
+
+
+/* Navbar links */
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Remove link underline */
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+    position: relative;
+
+    width: 350px;
+
+    margin: 100px auto;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border: 2px solid black;
+
+    border-radius: 15px;
+}
+.profile-card h1{
+    font-size:2rem;
+    letter-spacing:1px;
+    font-weight:700;
+
+}
+.profile-card p{
+    font-size:1rem;
+    line-height:1.6;
+}
+
+/* =========================
+   ONLINE BADGE
+========================= */
+
+.online-badge {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    padding: 5px 10px;
+
+    border: 1px solid black;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PROFILE TEXT
+========================= */
+
+.profile-card h1 {
+    margin-bottom: 5px;
+}
+
+.role {
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.profile-card button {
+    padding: 10px 20px;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    cursor: pointer;
+    transition:0.3s linear ;
+}
+.profile-card button:hover{
+    transform:translateY(-5px) scale(1.05);
+    background-color: blanchedalmond;
+
+}
+
+
+/* =========================
+   FIXED TOP BUTTON
+========================= */
+
+.top-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    color: black;
+
+    background-color: white;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+}

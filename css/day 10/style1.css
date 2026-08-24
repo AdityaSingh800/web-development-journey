@@ -1,0 +1,201 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    padding: 60px 20px;
+
+}
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+/* Main heading */
+
+.projects h1 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================
+   PROJECT CONTAINER
+========================= */
+
+.project-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+
+    padding: 30px;
+
+    border: 2px solid black;
+
+    border-radius: 12px;
+
+    background-color: white;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.project-card:hover {
+
+    transform: translateY(-8px) scale(1.02);
+
+    background-color: #f2f2f2;
+
+    border-color: #555;
+
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.project-card h2 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+   CARD PARAGRAPH
+========================= */
+
+.project-card p {
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    text-decoration: none;
+
+    color: black;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.btn:hover {
+
+    transform: scale(1.05);
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .project-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .project-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
