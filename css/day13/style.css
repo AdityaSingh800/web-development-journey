@@ -1,0 +1,278 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+
+    flex: 1;
+
+}
+
+
+/* =========================
+   INTRO TEXT
+========================= */
+
+.intro-text {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================
+   SUBHEADING
+========================= */
+
+.hero h2 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+
+    max-width: 550px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   BUTTON CONTAINER
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary {
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* =========================
+   IMAGE PLACEHOLDER
+========================= */
+
+.image-placeholder {
+
+    width: 300px;
+
+    height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 3px solid black;
+
+    border-radius: 50%;
+
+    font-size: 1.2rem;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 60px 0;
+
+    }
+
+    .description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .buttons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .hero h2 {
+
+        font-size: 1.2rem;
+
+    }
+
+    .image-placeholder {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+}
