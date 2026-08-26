@@ -143,11 +143,11 @@ body {
 .project-image {
 
     height: 220px;
-
+    width:100%;
     display: flex;
-
+    object-fit:cover ;
     justify-content: center;
-
+    
     align-items: center;
 
     background-color: #ddd;
