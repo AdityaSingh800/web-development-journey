@@ -1,34 +1,18 @@
-let t= document.getElementById ("title");
-let inc=document.getElementById ("increase");
-let dec=document.getElementById ("decrease");
-let reset=document.getElementById("reset");
-let col=document.getElementById("color");
-let count=0;
-let i=0;
-let colors = ["lightblue", "blanchedalmond","lightgreen", "lightpink", "lightyellow"];
+let nameInput = document.getElementById("name");
+let ageInput = document.getElementById("age");
 
-inc.addEventListener("click",function(){
-    count++;
-    t.textContent=count;
-})
+let button = document.getElementById("submit");
+let message = document.getElementById("message");
 
-dec.addEventListener ("click",function(){
-    count--;
-    t.textContent=count;
-})
+button.addEventListener("click", function() {
 
-reset.addEventListener("click",function(){
-    count=0;
-    t.textContent =count;
+    let name = nameInput.value.trim();
+    let age = Number(ageInput.value);
 
-})
+    if (name === "" || age === 0) {
+        message.textContent = "Please fill all fields.";
+    } else {
+        message.textContent = `Hello ${name}, you are ${age} years old.`;
+    }
 
-col.addEventListener("click",function(){
-    document.body.style.backgroundColor = colors[i]; 
-
-    i++;
-
-    if (i === colors.length){
-        i = 0;
-    }  
 });
